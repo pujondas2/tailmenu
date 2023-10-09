@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>responsive menu</title>
+</head>
+<body class="">
+
+    <section class="p-5">
+        <nav class="bg-red-500 flex justify-between items-center p-5 rounded-xl">
+            <div class="text-white text-xl uppercase font-semibold">
+                <a href="#">logo</a>
+            </div>
+            <div class="text-white uppercase font-semibold">
+                <div>
+                    <a href="#" class="sm:hidden" id="btn-line">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+                        </svg>
+                    </a>
+                    <a href="#" class="sm:hidden hidden" id="btn-x">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>  
+                    </a> 
+                </div>
+                <ul id="mobile-menu" class="flex gap-x-8 max-sm:absolute max-sm:bg-black max-sm:top-2/4 max-sm:translate-y-[-50%] max-sm:left-[-600px] max-sm:h-3/5 max-sm:w-3/5 max-sm:flex-col max-sm:text-center max-sm:justify-center max-sm:gap-y-8 rounded-[20px] duration-500 ease-in-out">
+                    <li>
+                        <a class="hover:text-gray-100 duration-500" href="#">home</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-100 duration-500" href="#">about</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-100 duration-500" href="#">work</a>
+                    </li>
+                    <li>
+                        <a class="hover:text-gray-100 duration-500" href="#">faq</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <script src="./app.js"></script>
+    
+</body>
+</html>
